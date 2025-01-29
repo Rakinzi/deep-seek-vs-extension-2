@@ -1,0 +1,41 @@
+{
+  "name": "langchain-deepseek",
+  "displayName": "langchain-deepseek",
+  "description": "A deepseek chat using r1",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "deepseek-r1-extension.helloWorld",
+        "title": "Custom DeepSeek Chat"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.27",
+    "@langchain/core": "^0.3.36",
+    "langchain": "^0.3.14",
+    "ollama": "^0.5.12"
+  }
+}
